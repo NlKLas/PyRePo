@@ -1,0 +1,27 @@
+Wir m??ssten die Daten mit in die Ordnerstruktur packen, dann m??ssen wir nicht jedes mal den 
+Link zum Einlesen ??ndern.
+Github funktioniert einwandfrei und ohne gro?? was machen zu m??ssen, 
+nur das clonen und pushen musst du mit gitbash machen, ist recht simpel und ist f??r mich schneller
+als das Ganze als zip zu downloaden etc. Github markiert dir auch jegliche ??nderungen die gemacht wurden
+Kannst es ja mal ausprobieren falls du Lust hast.
+
+https://www.cpp.edu/~pbsiegel/bio431/texnotes/chapter5.pdf
+Hier ist ein Link zu ner PDF ?ber die Kalibration von entsprechenden Detektoren. Anscheinend verwendet
+man in der Praxis mehr als eine Quelle bzw. Peak um auch den Offset bestimmen zu k?nnen, da wir aber
+nur eine Messung machen sollten, ist es wohl so gedacht, dass wir wirklich nur den Skalierungsfaktor
+zwischen Energie und Channel bestimmen sollten.
+Au?erdem gewichtet er zum Beispiel die Messwerte N eines Channels mit Stdabw sqrtN, hab das mal optional ?bernommen...
+
+
+Zu den Fits bei der 2:
+Das Ganze sieht zwar in etwa wie eine spiegelverkehrte Poissonverteilung aus, halte das aber f?r unsinnig, w?sste auch nicht
+auf welcher Grundlage sich ?hnlichkeiten ergeben sollten.
+Stochastisch gesehen, kann man es sich ja so vorstellen, dass es eine recht gro?e Anzahl n an m?glichen Kollisionspartnern gibt bei
+einer zumindest f?r niedrigen Druck oder kurze Strecken konstanten Wkeit p, macht eine Normalverteilung mit mittlerer Energie?nderung
+-dE*n*p. Ist jetzt der Druck gr??er erh?lt man quasi eine ?berlagerung von Normalverteilungen f?r jeden kleinen Streckenabschnitt,
+k?rzt sich wegen der Symmetrie bei konst p weg, wenn sich jetzt aber f?r jeden Punkt der ersten Gau?kurve das p verschieden stark
+?ndert, sich also die neuen kleinen Gau?kurven (meine das wie bei Elementarwellen) links weiter auseinanderbewegen (auch die Stdabw
+n*p*(1-p) sollte mit p zunehmen, da p < 1/2), zerl?uft die Kurve nach links hin.
+Es interessiert uns ja der Weg eines Teilchens, welches sozusagen immer mit dem Maximum der urspr?nglichen Verteilung unterwegs ist,
+hei?t genau der Formel folgt. Der Maximalwert der resultierenden Verteilung wandert dabei nach rechts, der Wert den wir ?ber den Fit
+erhalten ist somit systematisch zu gro?. Das muss sp?ter in die Diskussion bzw. k?nnte man versuchen den Fit entsprechend anzupassen...
