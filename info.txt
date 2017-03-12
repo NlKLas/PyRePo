@@ -25,10 +25,3 @@ n*p*(1-p) sollte mit p zunehmen, da p < 1/2), zerl?uft die Kurve nach links hin.
 Es interessiert uns ja der Weg eines Teilchens, welches sozusagen immer mit dem Maximum der urspr?nglichen Verteilung unterwegs ist,
 hei?t genau der Formel folgt. Der Maximalwert der resultierenden Verteilung wandert dabei nach rechts, der Wert den wir ?ber den Fit
 erhalten ist somit systematisch zu gro?. Das muss sp?ter in die Diskussion bzw. k?nnte man versuchen den Fit entsprechend anzupassen...
-
-
-Kennst du den Unterschied von absolute_sigma=True/False von curve fit? Ersteres gibt nämlich einen etwa 10 mal so großen Fehler.
-Am Ergebnis ändert sich nichts...
-
-Graphen sollten wir als pdf einfügen. Dann verschwimmen sie nicht, funktioniert genau wie die png. Figuresize verkleinern vergrößert
-dann automatisch die Schriftgröße...
