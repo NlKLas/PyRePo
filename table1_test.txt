@@ -1,0 +1,18 @@
+\setlength{\tabcolsep}{12pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{document}
+	\begin{table}[ht]
+		\rowcolors{2}{gray!12}{gray!12}
+		\centering
+		%\resizebox{10cm}{!}
+		\begin{tabular}{>{\cellcolor[gray]{0.83}}r@{\hskip 3pt}|*{7}{c!{\color{gray!25}\vrule width 0.1mm}}}
+			\rowcolor[gray]{0.83}
+			$\textrm{n}_{\small\textrm{ring}}$      & 1 & 2 & 3 & 4 & 5  & 6 & Pts \\
+			\hline
+			x [mm]			 & 6.90 & 4.23 & 0.23 & -2.34 & 10.4 & -5.34 & 12.4  \\
+			\noalign{\color{gray!25}\hrule height 0.1mm}
+			%\arrayrulecolor{gray!25}\hline
+			%\Xhline{0.4\arrayrulewidth}
+			$\Delta$x [mm]      & -6.4 & 3.7 & 0.5 & 8.13 &  -8.4 & 9.4 &  9.3  \\
+		\end{tabular}
+	\end{table}
